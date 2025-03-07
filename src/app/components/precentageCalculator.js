@@ -50,6 +50,13 @@ export default function PercentageCalculator() {
                         onChange={(e) => setMode(e.target.value)}
                     />
                 </div>
+
+                <button onClick={calculate}>Calculate</button>
+                {result !== null && (
+                    <div>
+                        Result: {result}
+                    </div>
+                )}
             </div>
         </div>
     )
