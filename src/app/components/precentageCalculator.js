@@ -33,6 +33,10 @@ export default function PercentageCalculator() {
                         <option value="give">Give Percentage (X is what % of Y)</option>
                     </select>
                 </div>
+
+                <div>
+                    <label htmlFor="">{mode === 'find' ? 'Percentage (%)' : 'Value (X)'}</label>
+                </div>
             </div>
         </div>
     )
