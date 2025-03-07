@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Percentage Calculator (Next.js)
 
-## Getting Started
+A simple dark-themed percentage calculator built with Next.js and Tailwind CSS. It allows users to either **find a percentage** of a number or **calculate what percentage** one number is of another.
 
-First, run the development server:
+## 🚀 Features
+- 📏 **Find Percentage** (e.g., "What is 25% of 200?")
+- 🔢 **Give Percentage** (e.g., "25 is what percent of 200?")
+- 🌙 **Dark Theme** for a sleek UI
+- ⚡ **Fast & Responsive** with Next.js and Tailwind CSS
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/percentage-calculator.git
+   cd percentage-calculator
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 📝 Usage
+- Select a mode:
+    - **Find Percentage**: Enter a percentage and a total value.
+    - **Give Percentage**: Enter two values to find what percentage one is of the other.
+- Click "Calculate" to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Built With
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
+Feel free to fork this project, submit issues, or create pull requests!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License
+This project is **open-source** and available under the [MIT License](LICENSE).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+💡 Made by Paul Lecomte
