@@ -23,6 +23,16 @@ export default function PercentageCalculator() {
         <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
             <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
                 <h1 className="text-xl font-bold mb-4 text-center">Percentage Calculator</h1>
+                <div>
+                    <label htmlFor="">Choose mode</label>
+                    <select
+                        value={mode}
+                        onChange={(e) => setMode(e.target.value)}
+                    >
+                        <option value="find">Find Percentage (X% of Y)</option>
+                        <option value="give">Give Percentage (X is what % of Y)</option>
+                    </select>
+                </div>
             </div>
         </div>
     )
