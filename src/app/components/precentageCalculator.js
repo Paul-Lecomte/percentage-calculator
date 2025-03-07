@@ -43,10 +43,10 @@ export default function PercentageCalculator() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="">{mode === 'find' ? 'Percentage (%)' : 'Value (X)'}</label>
+                    <label htmlFor="">{mode === 'find' ? 'Total Value (Y)' : 'Total (Y)'}</label>
                     <input
                         type="number"
-                        value={num1}
+                        value={num2}
                         onChange={(e) => setMode(e.target.value)}
                     />
                 </div>
