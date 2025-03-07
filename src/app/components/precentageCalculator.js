@@ -21,55 +21,53 @@ export default function PercentageCalculator() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
-            <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
-                <h1 className="text-xl font-bold mb-4 text-center">Percentage Calculator</h1>
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+            <h1 className="text-xl font-bold mb-4 text-center">Percentage Calculator</h1>
 
-                <div className="mb-4">
-                    <label className="block mb-2 text-sm font-medium">Choose Mode</label>
-                    <select
-                        value={mode}
-                        onChange={(e) => setMode(e.target.value)}
-                        className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                        <option value="find">Find Percentage (X% of Y)</option>
-                        <option value="give">Give Percentage (X is what % of Y)</option>
-                    </select>
-                </div>
-
-                <div className="mb-4">
-                    <label className="block mb-2 text-sm font-medium">{mode === 'find' ? 'Percentage (%)' : 'Value (X)'}</label>
-                    <input
-                        type="number"
-                        value={num1}
-                        onChange={(e) => setNum1(e.target.value)}
-                        className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                </div>
-
-                <div className="mb-4">
-                    <label className="block mb-2 text-sm font-medium">{mode === 'find' ? 'Total Value (Y)' : 'Total (Y)'}</label>
-                    <input
-                        type="number"
-                        value={num2}
-                        onChange={(e) => setNum2(e.target.value)}
-                        className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                </div>
-
-                <button
-                    onClick={calculate}
-                    className="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 transition"
+            <div className="mb-4">
+                <label className="block mb-2 text-sm font-medium">Choose Mode</label>
+                <select
+                    value={mode}
+                    onChange={(e) => setMode(e.target.value)}
+                    className="w-full p-2 border border-gray-600 bg-gray-700 text-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
-                    Calculate
-                </button>
-
-                {result !== null && (
-                    <div className="mt-4 text-center text-lg font-semibold">
-                        Result: {result}
-                    </div>
-                )}
+                    <option value="find">Find Percentage (X% of Y)</option>
+                    <option value="give">Give Percentage (X is what % of Y)</option>
+                </select>
             </div>
+
+            <div className="mb-4">
+                <label className="block mb-2 text-sm font-medium">{mode === 'find' ? 'Percentage (%)' : 'Value (X)'}</label>
+                <input
+                    type="number"
+                    value={num1}
+                    onChange={(e) => setNum1(e.target.value)}
+                    className="w-full p-2 border border-gray-600 bg-gray-700 text-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+            </div>
+
+            <div className="mb-4">
+                <label className="block mb-2 text-sm font-medium">{mode === 'find' ? 'Total Value (Y)' : 'Total (Y)'}</label>
+                <input
+                    type="number"
+                    value={num2}
+                    onChange={(e) => setNum2(e.target.value)}
+                    className="w-full p-2 border border-gray-600 bg-gray-700 text-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+            </div>
+
+            <button
+                onClick={calculate}
+                className="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 transition"
+            >
+                Calculate
+            </button>
+
+            {result !== null && (
+                <div className="mt-4 text-center text-lg font-semibold text-green-400">
+                    Result: {result}
+                </div>
+            )}
         </div>
-    );
+    )
 }
