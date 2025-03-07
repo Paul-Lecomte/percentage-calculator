@@ -20,8 +20,10 @@ export default function PercentageCalculator() {
         }
     };
     return (
-        <div>
-
+        <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
+            <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+                <h1 className="text-xl font-bold mb-4 text-center">Percentage Calculator</h1>
+            </div>
         </div>
     )
 }

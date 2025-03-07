@@ -1,4 +1,3 @@
-import Image from "next/image";
 import PercentageCalculator from "./components/precentageCalculator";
 
 export default function Home() {
